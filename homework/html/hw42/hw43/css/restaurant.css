@@ -1,0 +1,45 @@
+html{
+    background-color: aquamarine
+} 
+ body{
+     
+    color: green;
+    padding: 2rem;
+    
+}
+header {
+    text-align: center;
+}
+div h1{
+    border: 3px dotted palevioletred;
+    
+}
+div p{
+    font-size: 2rem
+}
+header h1{
+    color: grey;
+      font-size: 4rem 
+      
+    }
+  header pre{
+      font-size: 2rem;
+
+
+}
+header a{
+    color: black;
+    text-decoration: none;
+    font-size: 3rem
+}
+header a img{
+    width:200px;
+     height:200px;
+}
+
+
+
+header a:hover {
+    text-decoration: underline;
+    color: yellowgreen;
+}
