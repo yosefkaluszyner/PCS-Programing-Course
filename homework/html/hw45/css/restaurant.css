@@ -1,0 +1,66 @@
+html{
+    background-color: rgb(127, 255,212) 
+} 
+ body{
+  
+     color:rgb(0, 128, 0); 
+    
+    padding: 2rem;
+     
+}
+header {
+     text-align: center; 
+}
+.name{
+    border: 3px dotted rgb(216, 112,147);
+    
+}
+.aboutUs{
+    font-size: 2rem
+}
+header h1{
+    color: rgb(128, 128,128);
+      font-size: 4rem 
+      
+    }
+  header pre{
+      
+       font-size: 2rem; 
+}
+  header a{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 3rem
+}
+header a img{
+    width:150px;
+     height:150px;
+}
+
+header a :hover {
+    text-decoration: underline;
+    color: rgb(154, 205, 50)
+}
+
+.menuItem{
+    float: left;  
+     
+}
+.pics{
+     width: 500px;
+    overflow: auto;
+    margin: auto; 
+}
+
+
+
+
+#grill{
+    border: 5px solid rgb(216, 112, 147)
+}
+
+    
+    
+
+
+
