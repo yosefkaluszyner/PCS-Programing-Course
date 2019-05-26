@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Survey</title>
+</head>
+
+<body>
+    <style>
+        article {
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        input:not([type="submit"]),
+        textarea {
+            height: 4rem;
+            width: 400px;
+        }
+    </style>
+    <form action="processForm.php" method="post">
+        <article>
+            <label for="firstName"></label><input name="firstName" id="firstName"
+                placeholder="Enter your first name here" required min ="2" max ="12"> <br>
+            <label for="lastName"></label><input name="lastName" id="lastName" placeholder="Enter your last name here"
+                required min ="3" max ="16"> <br>
+            <label for="email"></label><input type="email" name="email" id="email" placeholder="Enter your email here">
+            <br>
+            <label for="Date Of Visit"></label>Date Of Visit<input type="date" name="Date Of Visit" id="Date Of Visit">
+            <br>
+            <label for="rating"></label>Rating:<input type="range" name="rating" id="rating" required min ="1" max ="10">
+            <br>
+            <label for="comments"></label>
+            <textarea placeholder="Please write a comment here"></textarea><br>
+            <input type="submit">
+        </article>
+</body>
+
+</html>
