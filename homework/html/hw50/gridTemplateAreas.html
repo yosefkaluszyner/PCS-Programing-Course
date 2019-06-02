@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+    body {
+
+        display: grid;
+        gap: 15px;
+        grid-template-columns: 75px;
+
+    }
+
+    div {
+        background-color: darkgreen;
+        height: 75px;
+        min-width: 75px;
+    }
+
+    @media screen and (min-width:600px) {
+        body {
+            grid-template-columns: repeat(2, 75px);
+
+            grid-template-areas:
+                "div1 div1"
+                "div2 div3"
+                "div4 div5"
+                "div6 div7";
+
+
+        }
+
+        div {
+            background-color: red;
+        }
+
+        #box1 {
+            grid-area: div1;
+        }
+
+        #box2 {
+            grid-area: div2;
+        }
+
+        #box3 {
+            grid-area: div3;
+        }
+
+        #box4 {
+            grid-area: div4;
+        }
+
+        #box5 {
+            grid-area: div5;
+        }
+
+        #box6 {
+            grid-area: div6;
+        }
+
+        #box7 {
+            grid-area: div7;
+        }
+    }
+
+    @media screen and (min-width:800px) {
+        body {
+            grid-template-columns: repeat(4, 75px);
+
+
+            grid-template-areas:
+                "div1 div1 div2 div3"
+
+                "div4 div5 div6 div7";
+        }
+
+        div {
+            background-color: blue;
+        }
+
+        #box1 {
+            grid-area: div1;
+        }
+
+        #box2 {
+            grid-area: div2;
+        }
+
+        #box3 {
+            grid-area: div3;
+        }
+
+        #box4 {
+            grid-area: div4;
+        }
+
+        #box5 {
+            grid-area: div5;
+        }
+
+        #box6 {
+            grid-area: div6;
+        }
+
+        #box7 {
+            grid-area: div7;
+        }
+    }
+</style>
+
+<body>
+    <div id=box1></div>
+    <div id=box2></div>
+    <div id=box3></div>
+    <div id=box4></div>
+    <div id=box5></div>
+    <div id=box6></div>
+    <div id=box7></div>
+</body>
+
+</html>

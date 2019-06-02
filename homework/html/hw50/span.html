@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+    body {
+
+        display: grid;
+        gap: 15px;
+        grid-template-columns: 75px;
+    }
+
+    div {
+        background-color: darkgreen;
+        height: 75px;
+        min-width: 75px;
+    }
+
+    @media screen and (min-width:600px) {
+        body {
+            grid-template-columns: repeat(2, 75px);
+        }
+
+        body :nth-child(1) {
+            grid-column-start: span 2;
+        }
+
+        div {
+            background-color: red;
+        }
+    }
+
+    @media screen and (min-width:800px) {
+        body {
+            grid-template-columns: repeat(4, 75px);
+        }
+
+        body :nth-child(1) {
+            grid-column-start: span 2;
+        }
+
+        div {
+            background-color: blue;
+        }
+    }
+</style>
+
+<body>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+</body>
+
+</html>
