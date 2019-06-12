@@ -1,0 +1,196 @@
+html {
+    background-color: white;
+
+}
+
+body {
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    box-sizing: border-box;
+    font-family: arial, sans-serif;
+
+}
+
+nav {
+
+    margin-top: -8px;
+    padding-left: 12em;
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    color: white;
+    background-color: black;
+
+}
+
+
+
+footer {
+
+    padding-left: 12em;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    color: white;
+    background-color: black;
+}
+
+
+
+li a {
+    text-decoration-line: none;
+    color: white;
+
+}
+
+li a:hover {
+    text-decoration-line: underline;
+    color: red;
+}
+
+ul {
+    display: flex;
+    margin-block-start: 0;
+    margin-block-end: 0;
+
+}
+
+li {
+
+    padding: 10px;
+    list-style-type: none;
+
+}
+
+header {
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    background-color: lightgray;
+    width: 600px;
+    height: 150px;
+    padding-top: 2em;
+    text-align: center;
+
+}
+table{
+    width: 600px;
+}
+
+header h1 {
+    font-size: 2em;
+}
+
+h1 {
+    font-size: 1.5em;
+}
+
+img {
+
+    width: 600px;
+    height: 300px;
+
+}
+
+video {
+
+    width: 600px;
+    height: 300px;
+    object-fit: fill;
+}
+
+section h1 {
+
+    text-align: center;
+}
+
+section p {
+text-align: justify;
+ margin-top: 0;
+}
+
+.form {
+    border-radius: 3px;
+    padding: 1em;
+    padding-bottom: 2em;
+    width: 600px;
+    height: 150px;
+    background-color: lightgrey;
+    text-align: center;
+}
+label{
+   padding: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+input:not([type="submit"]) {
+    box-shadow: 5px 5px black;
+    border-radius: 3px;
+}
+
+table,
+th,
+tfoot,
+td {
+    border: 1px solid black;
+    text-align: center;
+    border-collapse: collapse;
+    
+}
+tr:nth-child(2n){
+    background-color: lightgray;
+}
+tr:hover {
+background-color: blue;
+}
+
+tfoot, tr:nth-child(n+2){
+    text-align-last: right;
+}
+
+thead,td:first-child{
+    font-weight: bold;
+}
+td:last-child{
+    color: red;
+}
+
+
+@media screen and (min-width:1000px) {
+header,.form,table{
+    width: 800px;
+}
+label{
+    padding: 1em;
+    display: inline;
+   
+}
+
+    aside {
+        display: flex;
+    }
+
+    aside section {
+    margin-right: .5em;
+    }
+
+    img {
+
+        width: 300px;
+        height: 150px;
+
+    }
+
+    video {
+        width: 300px;
+        height: 150px;
+    }
+}
+@media screen and (max-width:999px){
+    hr{
+        display: none;
+    }
+}
